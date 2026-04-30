@@ -1,0 +1,38 @@
+@charset "UTF-8";
+ 
+/* #principal significa que o estilo só será aplicado ao elemento que tiver o id "principal" */
+
+/* em html o id é definido usando a tag id e o css usa o seletor # pode somente um elemento*/
+
+/* em html é classe é definida usando a tag class e o css usa o seletor . pode ser aplicado a vários elementos */
+
+body {
+    background-color: rgb(195, 252, 204);
+    font-family: Arial, Helvetica, sans-serif;
+    
+ }
+ h1#principal {
+    text-align: center;
+    background-color: rgb(0, 255, 21);
+    color: rgb(255, 255, 255);
+ }
+
+ h1 { 
+    color: rgb(9, 255, 0);
+ }
+ h2 {
+    color: rgb(71, 129, 75);
+ }
+
+ .básico {
+color: rgb(0, 255, 21);
+ }
+ .intermediário {
+color: blue;
+ }
+ .avançado {
+color: rgb(255, 0, 0);
+ }
+.destaque {
+    background-color: rgba(223, 226, 12, 0.555);
+}

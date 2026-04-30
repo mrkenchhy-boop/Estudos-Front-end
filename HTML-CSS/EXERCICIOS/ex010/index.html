@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o <a href="https://github.com/mrkenchhy-boop" target="_blank" rel="External">meu github</a></p>
+    <p> Você também pode acessar <a href="https://www.youtube.com/" target="_blank" rel="External">o Youtube</a></p>
+    <!--<a> significa "âncora" e o atributo href especifica a URL para onde o link aponta. -->
+    <!-- O atributo target="_blank" faz com que o link seja aberto em uma nova aba do navegador. Enquanto o atributo rel="External" indica que o link leva a um recurso externo -->
+     <h1>Usando links internos</h1>
+     <p>Esta e a primeira pagina do meu site. Se você quiser, pode acessar  <a href="pag002.html" rel="_self">a segunda pagina</a></p>
+     <!-- O atributo rel="next" indica que o link leva a um recurso seguinte, ou seja, a segunda pagina do site. -->
+      <p>voce pode acessar  <a href="Noticias/pag003.html" rel="_self">a terceira pagina de noticias</a></p>
+      <!-- O atributo rel="_self" indica que o link leva a um recurso dentro da mesma pagina -->
+       <h1>Links para dowload</h1>
+       <ul>
+        <li> <a href="Livro/Piscicultura.pdf" download="Piscicultura.pdf" type="application/pdf"> Baixar o Livro</a></li>
+        <li><a href="Livro/Piscicultura.zip" download="Livro de Piscicultura.zip" type="application/zip">Livro compactado </a></li>
+        <!-- O atributo download especifica o nome do arquivo a ser baixado e o atributo type especifica o tipo de arquivo -->
+       </ul>  
+
+</body>
+</html>

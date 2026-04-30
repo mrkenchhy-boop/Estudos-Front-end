@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+/* Seletores Personalizados
+id= # 
+class= .
+pseudo-element= ::
+pseudo-class= :
+> = filho direto childrem
+*/
+
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(0, 255, 0);
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(0, 0, 255);
+            text-decoration: underline;
+            background-color: brown;
+        }
+        .Especial:active {
+            content: '&#169';
+            color: rgb(255, 255, 0);
+            text-decoration: none;
+        }
+        .Especial::before {
+            content: '★';
+            background-color: brown;
+            
+        }
+        .Especial::after {
+            background-color: brown;
+            content: '→';
+            
+        }
+
+        /* a:hover significa que o link está sendo "hovered" (passando o mouse por cima) */
+
+        /* a:active significa que o link está sendo "ativo" (clicado) */
+
+        /*a:visited significa que o link já foi visitado (clicado anteriormente) */
+
+        /*a significa o estado normal do link, quando ele não está sendo interagido de nenhuma forma. */
+
+        /* a::after é um pseudo-elemento que adiciona conteúdo após o elemento selecionado (neste caso, o link). Ele é usado para adicionar texto ou outros elementos visuais após o link. Neste exemplo, ele adiciona a palavra " (link)" após cada link. */
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/mrkenchhy-boop" target="_blank">Repositório GitHub</a>
+
+        <li class="Especial"><a href="https://www.youtube.com" target="_blank">Canal aleatorio YouTube</a>
+
+    </ul>
+</body>
+</html>
