@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'droid';
+  src: url("fontes/idroid.otf") format("opentype");
+}
+
+.font {
+  font-family: 'droid';
+  font-weight: normal;
+  color: rgb(0, 117, 16);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+body {
+  margin: 0;
+  background-color: rgb(63, 255, 191);
+}
+
+
+article {
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.introducao {
+  background: linear-gradient(rgb(0, 224, 131), rgb(0, 112, 56));
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.link {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.link:hover {
+  color: rgb(85, 255, 85);
+}
+
+
+li::marker {
+  content: "✔ ";
+}
+
+
+aside {
+  background-color: white;
+  padding: 10px;
+  
+}
+
+aside > h3 {
+  background-color: rgb(69, 158, 128);
+  color: white;
+  padding: 10px;
+  margin: -10px -10px 10px -10px;
+  
+}
+
+aside > ul {
+  columns: 2;
+  list-style-position: inside;
+}
+
+
+abbr {
+  text-decoration: none;
+  border-bottom: 2px dotted green;
+  cursor: help;
+}
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 7px solid green;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-container::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+footer aside {
+  max-width: 920px;
+  margin: 0px auto;
+  background: white;
+  
+  overflow: hidden; 
+}
+
+
+footer aside > h3 {
+  background-color: rgb(69, 158, 128);
+  color: white;
+  padding: 10px;
+  margin: 0; 
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 255, 170);
+}
