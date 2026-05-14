@@ -16,9 +16,108 @@
     <h1>HELLO, WORLD!</h1>
     
     <script>
-        var nome =window.prompt('Qual o seu nome?')    
-        document.write(`Olá ${nome}. Seu nome tem ${nome.length} letras.`)
+
+        var nome = window.prompt('Qual o seu nome?')    
+        document.write (`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras.<br>`) 
+        document.write (`Seu nome em maiúsculas é ${nome.toLocaleUpperCase()}<br>`) 
+        document.write (`Seu nome em minúsculas é ${nome.toLocaleLowerCase()}`) 
+        
     </script>
+    
+    <!-- 
+     Isso se eu quiser mostrar como se fosse o salário de alguém
+var n1 = 2500
+document.write(n1.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+}))
+
+    + : MAIS
+    - : MENOS
+    * : MULTIPLICA
+    / : DIVIDE
+    % : RESTO DA DIVISÃO
+    ** : POTÊNCIA
+
+| Operador    | Nome                | Exemplo  | Resultado |
+| --------    | ----------------    | -------- | --------- |
+| `+`         | Soma                | `5 + 2`  |    `7`    |
+| `-`         | Subtração           | `5 - 2`  | `3`       |
+| `*`         | Multiplicação       | `5 * 2`  | `10`      |
+| `/`         | Divisão             | `10 / 2` | `5`       |
+| `%`         | Resto da divisão    | `10 % 3` | `1`       |
+| `**`        | Potência            | `2 ** 3` | `8`       |
+
+ORDEM DE PRECEDENCIA
+Parênteses ()
+Potência **
+Multiplicação *, divisão / e resto %
+Soma + e subtração -
+
+ATRIBUIÇÃO SIMPLES
+var a = 5+3  {8}
+var b = a % 5  {3}
+var c = 5 * b ** 2 {45}
+var d = 10 - a / 2 {6}
+var e = 6 * 2 / d {2} 
+var f = b % e + 4 / e {3}
+
+AUTO-ATRIBUÇOES
+var n = 3
+n = n + 4 n{7}
+n = n - 5 n{2}
+...
+
+INCREMENTO
+var x = 5
+x = x + 1  x+=1 simplificando x ++
+x = x - 1  x-=1 simplificando x --
+
+RELACIONAIS
+5 > 2 TRUE o valor 5 e maior que dois
+7 < 4 FALSE o valor 7 nao e menor que 4
+8 >= 8 TRUE o valor 8 nao e maior que 8 porém é igual
+9 <= 7 FALSE o valor 9 nao e menor e nem igual a 7
+5 == 5 TRUE 5 é igual a 5
+4 != 4 FALSE 4 nao e diferente de 4
+
+IDENTIDADE
+5 == 5 TRUE
+5 == '5' TRUE 5 é igual a 5
+5 === '5' FALSE 5 nao é idêntico a '5'
+
+Lógicos
+! negaçao nao 'quero uma caneta de qualquer cor ,porém nao pode ser azul'
+
+&& conjuncao e 'quero uma caneta azul e uma vermelha'
+
+|| disjuncao ou 'quero uma caneta azul ou uma vermelha
+
+NEGACAO
+! TRUE - FALSE
+  FALSE - TRUE
+
+  CONJUNCAO
+  TRUE && TRUE - TRUE
+  TRUE && FALSE - FALSE
+  FALSE && TRUE - FALSE
+  FALSE && FALSE - FALSE
+
+  DISJUNCAO
+ TRUE || TRUE - TRUE
+ TRUE || FALSE - TRUE
+ FALSE || TRUE - TRUE
+ FALSE || FALSE - FALSE
+
+ EX
+ IDADE >= 15 && IDADE <= 17 A idade está entre 15 e 17?
+ ESTADO == 'RJ' || ESTADO == 'SP' O estado é RJ ou SP?
+ SALÁRIO > 1500 && sexo != 'M' O salário é acima de 1500 e nao e homem?
+ 
+ TERNÁRIO
+ Teste ? true : false
+ média >= 7.0 ? "APROVADO" : "REPROVADO
+-->
 
    
 </body>
